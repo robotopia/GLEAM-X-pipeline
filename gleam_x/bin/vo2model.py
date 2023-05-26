@@ -16,7 +16,7 @@ import astropy.units as u
 from astropy.table import Table
 from argparse import ArgumentParser
 
-usage = "Usage: %prog [args] <file>\n"
+usage = "Usage: " + os.path.basename(__file__) + " [args] <file>\n"
 parser = ArgumentParser(usage=usage)
 parser.add_argument(
     "--catalogue",
